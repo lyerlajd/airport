@@ -15,16 +15,6 @@ nav {
     padding: 1rem 2rem;
 }
 
-li {
-    border: 2px solid var(--yellow);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-li a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 .home-button {
     color: var(--white);
     fill: var(--white);
@@ -36,7 +26,7 @@ li a {
 }
 .home-button div {
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .home-button div { transition: inherit; font-weight: bold;}
@@ -51,6 +41,15 @@ li a {
     transition: inherit;
 }
 
+.button {
+    border: 2px solid var(--yellow);
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+}
+.button > a {
+    color: var(--white);
+}
+
 .page-links {
     list-style: none;
     display: flex;
@@ -62,6 +61,17 @@ li a {
     color: var(--white);
     text-wrap: nowrap;
     text-align: center;
+}
+
+.page-links > li, .page-links > li > a {
+    transition-duration: 0.5s;
+}
+
+.page-links > li:hover {
+    background-color: var(--yellow);
+}
+.page-links > li:hover > a {
+    color: var(--black);
 }
 
 .login-register {
